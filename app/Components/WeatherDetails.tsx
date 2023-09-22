@@ -32,7 +32,7 @@ const WeatherDetails = ({data}: WeatherDetailsProps) => {
   return (
    <>
     <div className='p-12'>
-      <h1 className='mb-16 text-3xl text-white'>Detalhes do tempo</h1>
+      <h1 className='mb-20 p-1 text-3xl text-white'>Detalhes do tempo</h1>
 
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
         <div className='bg-white/50 flex p-4 items-center justify-center gap-6 rounded-xl'>

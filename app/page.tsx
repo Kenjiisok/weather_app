@@ -54,7 +54,6 @@ const Home = () => {
     content = (
       <>
         <div className='flex md:flex-row flex-col p-12 items-center justify-between'>
-          <Toggle/>
           <Current
             data={data}
           />
@@ -79,6 +78,7 @@ const Home = () => {
             setLocation={setLocation}
           />
           <h1 className='mb-8 md:mb-0 order-1 text-blue-800 py-2 px-4 rounded-xl italic font-semibold'>Weather App.</h1>
+          <Toggle/>
         </div>
        {content}
       </div>  
