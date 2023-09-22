@@ -13,12 +13,12 @@ const Input = ({handleSearch, setLocation}: InputProps) => {
         <input
             type="text"
             placeholder="Procure por uma cidade"
-            className="w-full bg-transparent border-b-2 border-white/50 placeholder-white/50 outline-none text-white"
+            className="w-full bg-transparent border-b-2 border-zinc-700 outline-none text-zinc-950"
             onKeyDown={handleSearch}
             onChange={(e) => setLocation(e.target.value)}
         />
-        <div className="ml-[-25px] text-white cursor-pointer">
-            <AiOutlineSearch/>
+        <div className="ml-[-25px] text-zinc-700 cursor-pointer">
+            <AiOutlineSearch fontSize={25}/>
         </div>
     </form>
   )

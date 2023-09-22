@@ -38,16 +38,16 @@ const Home = () => {
   let content;
   if (Object.keys(data).length === 0 && error === "") {
     content = (
-      <div className='text-white text-center h-screen mt-[5rem]'>
-        <h2 className='text-3xl font-semibold mb-4'>Bem vindo</h2>
-        <p className='text-xl'>Busque por uma cidade</p>
+      <div className='text-center h-screen'>
+        <h2 className='text-zinc-700 text-3xl font-semibold mb-4'>Bem vindo</h2>
+        <p className='text-zinc-700 text-xl'>Busque por uma cidade</p>
       </div>
     )
   } else if (error !== "") {
     content = (
-      <div className='text-blue-950 text-center h-screen mt-[5rem]'>
-        <p className='text-3xl font-semibold mb-4'>Cidade não encontrada</p>
-        <p className='text-2xl font-semibold mb-4'>Tente outra cidade</p>
+      <div className='text-center h-screen mt-[1rem]'>
+        <p className='text-zinc-700 text-3xl font-semibold mb-4'>Cidade não encontrada</p>
+        <p className='text-zinc-700 text-2xl font-semibold mb-4'>Tente outra cidade</p>
       </div>
     )
   } else {
@@ -70,14 +70,14 @@ const Home = () => {
   }
 
   return (
-    <div className='bg-cover bg-gradient-to-r from-blue-950 to-blue-400 h-fit'>
-      <div className='bg-white/25 w-full rounded-lg flex flex-col h-fit'>
+    <div className='bg-cover bg-gray-200 h-fit'>
+      <div className='bg-white/50 w-full rounded-lg flex flex-col h-fit'>
         <div className='flex flex-col md:flex-row justify-between items-center p-12'>
           <Input 
             handleSearch={handleSearch}
             setLocation={setLocation}
           />
-          <h1 className='mb-8 md:mb-0 order-1 text-blue-800 py-2 px-4 rounded-xl italic font-semibold'>Weather App.</h1>
+          <h1 className='mb-8 md:mb-0 order-1 text-3xl text-zinc-700 py-2 px-4 rounded-xl italic font-semibold'>Weather App.</h1>
           <Toggle/>
         </div>
        {content}
