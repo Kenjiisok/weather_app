@@ -6,6 +6,7 @@ import { useState } from 'react';
 import Current from './Components/Current';
 import Forecast from './Components/Forecast';
 import WeatherDetails from './Components/WeatherDetails';
+import Toggle from './Components/Toggle'
 
 const Home = () => {
   
@@ -53,6 +54,7 @@ const Home = () => {
     content = (
       <>
         <div className='flex md:flex-row flex-col p-12 items-center justify-between'>
+          <Toggle/>
           <Current
             data={data}
           />
