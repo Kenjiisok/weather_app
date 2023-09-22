@@ -70,7 +70,7 @@ const Home = () => {
   }
 
   return (
-    <div className='bg-cover bg-gray-200 h-fit'>
+    <div className='bg-cover dark:bg-zinc-700  bg-gray-200 h-fit'>
       <div className='bg-white/50 w-full rounded-lg flex flex-col h-fit'>
         <div className='flex flex-col md:flex-row justify-between items-center p-12'>
           <Input 
