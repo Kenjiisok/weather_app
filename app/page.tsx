@@ -7,6 +7,7 @@ import Current from './Components/Current';
 import Forecast from './Components/Forecast';
 import WeatherDetails from './Components/WeatherDetails';
 import Toggle from './Components/Toggle'
+import { BASE_URL, KEY_API} from '@/api';
 
 const Home = () => {
   
@@ -14,7 +15,7 @@ const Home = () => {
   const [location, setLocation] = useState("")
   const [error, setError] = useState("")
 
-  const url = `http://api.weatherapi.com/v1/forecast.json?key=b5466eefba004bfda20142209232109&q=${location}&days=7&aqi=yes&alerts=yes`
+  const url = `${BASE_URL}forecast.json?key=${KEY_API}&q=${location}&days=7&aqi=yes&alerts=yes`
 
   const handleSearch = async (e: React.KeyboardEvent<HTMLInputElement>) => {
     if(e.key === "Enter"){
