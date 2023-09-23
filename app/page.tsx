@@ -39,7 +39,7 @@ const Home = () => {
   if (Object.keys(data).length === 0 && error === "") {
     content = (
       <div className='text-center h-screen'>
-        <h2 className='text-zinc-700  dark:text-zinc-200 text-3xl font-semibold mb-4'>Bem vindo</h2>
+        <h2 className='text-zinc-700  dark:text-zinc-200 text-3xl font-semibold mb-4 mt-40'>Bem vindo</h2>
         <p className='text-zinc-700 dark:text-zinc-200 text-xl'>Busque por uma cidade</p>
       </div>
     )
@@ -53,7 +53,7 @@ const Home = () => {
   } else {
     content = (
       <>
-        <div className='flex md:flex-row flex-col p-12 items-center justify-between'>
+        <div className='flex md:flex-row flex-col p-12 items-center justify-between '>
           <Current
             data={data}
           />
@@ -70,14 +70,14 @@ const Home = () => {
   }
 
   return (
-    <div className='bg-cover dark:bg-stone-950  bg-gray-200 h-fit'>
+    <div className='bg-cover dark:bg-stone-950  bg-gray-200 h-fit transition-colors duration-500'>
       <div className='w-full rounded-lg flex flex-col h-fit'>
         <div className='flex flex-col md:flex-row justify-between items-center p-12'>
           <Input 
             handleSearch={handleSearch}
             setLocation={setLocation}
           />
-          <h1 className='mb-8 md:mb-0 order-1 text-3xl text-zinc-700 dark:text-zinc-200 py-2 px-4 rounded-xl italic font-semibold'>Weather App.</h1>
+          <h1 className='mb-8 order-1 text-3xl text-zinc-700 dark:text-zinc-200 py-2 px-4 rounded-xl italic font-semibold'>Weather App.</h1>
           <Toggle/>
         </div>
        {content}
