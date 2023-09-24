@@ -17,11 +17,11 @@ const Input = ({handleSearch, setLocation}: InputProps) => {
             onKeyDown={handleSearch}
             onChange={(e) => setLocation(e.target.value)}
         />
-        <div className="ml-[-25px] text-zinc-700 cursor-pointer">
+        <div className="ml-[-25px] text-zinc-700">
             <AiOutlineSearch fontSize={25} color={'gray'}/>
         </div>
     </form>
   )
 }
 
-export default Input
+export default Input;
