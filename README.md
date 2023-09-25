@@ -1,4 +1,10 @@
-## Weather -- ⚠️ EM BREVE UM README ATUALIZADO ⚠️ -- 
+## Weather App.
+
+> Status: Done 🗸
+
+### Projeto para envolver uma loja nos conteitos de IoT e futuramente em IA, com a proposta de melhorar o negócio.
+### Programa para ver o clima de qualquer cidade do mundo feita com a Api da <a href="https://www.weatherapi.com">Weather Api<a>
+
 
 First, run the development server:
 
